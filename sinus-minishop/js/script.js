@@ -29,7 +29,7 @@ document.querySelector('footer section article:nth-child(2) p').innerHTML = 'New
 
 //8. Change the color of all <p>.
 document.querySelectorAll('p').forEach (p => {
-    p.style.color = "red";
+    p.style.color = "blue";
 });
 
 //9. Change text on all buttons to add to cart .
@@ -42,3 +42,11 @@ document.querySelector('nav a:first-child').classList.add('active');
 
 //11. Remove the logo class from the logo.
 document.querySelector('header img').classList.remove('logo');
+
+//12. Add a new menu item.
+const newItem = document.createElement('a');
+newItem.href = '#';
+newItem.innerHTML = 'Login';
+//document.querySelector('nav').appendChild(newItem);
+const thirdLink = document.querySelector('nav a:nth-child(3)');
+thirdLink.insertAdjacentElement('afterend', newItem);
