@@ -16,3 +16,7 @@ document.querySelector('nav a:nth-child(3)').innerHTML = 'Mail Us';
 document.querySelector('.art-2 h2').innerHTML = 'New Sinus Hoodie';
 document.querySelector('.art-2 h3').innerHTML = 'New Fire';
 document.querySelector('.art-2 p').innerHTML = 'This is the updated description for the Sinus Hoodie - Fire. It is hotter than ever!';
+
+//5. Change the background color and text of a button.
+document.querySelector('.art-1 button').innerHTML = 'Add to card';
+document.querySelector('.art-1 button').style.backgroundColor = 'purple';
