@@ -44,9 +44,24 @@ document.querySelector('nav a:first-child').classList.add('active');
 document.querySelector('header img').classList.remove('logo');
 
 //12. Add a new menu item.
-const newItem = document.createElement('a');
+let newItem = document.createElement('a');
 newItem.href = '#';
 newItem.innerHTML = 'Login';
 //document.querySelector('nav').appendChild(newItem);
-const thirdLink = document.querySelector('nav a:nth-child(3)');
+let thirdLink = document.querySelector('nav a:nth-child(3)');
 thirdLink.insertAdjacentElement('afterend', newItem);
+
+/*13.add a new product with the following info
+ img	hoodie-forrest.png
+h2	Sinus Hoodie
+h3	Forrest
+p	The company itself is a very successful company. Often, pains. */
+let newProduct = document.createElement('article');
+newProduct.classList.add('art-4');
+newProduct.innerHTML = ` <figure><img src="img/hoodie-forrest.png" alt="hoodie"></figure>
+            <h2>Sinus Hoodie</h2>
+            <h3>Forrest</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, dolores.</p>
+            <button>buy</button>` ;
+document.querySelector('main').appendChild(newProduct);
+
