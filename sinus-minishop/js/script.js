@@ -39,3 +39,6 @@ button.innerHTML = 'Add to cart';
 
 //10. Add the class active to the home menu option .
 document.querySelector('nav a:first-child').classList.add('active');
+
+//11. Remove the logo class from the logo.
+document.querySelector('header img').classList.remove('logo');
