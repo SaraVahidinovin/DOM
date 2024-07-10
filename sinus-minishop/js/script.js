@@ -69,3 +69,12 @@ document.querySelector('main').appendChild(newProduct);
 document.querySelector('header img').addEventListener('click', () => {
     console.log('found you!');
 });
+
+//15. Listen for clicks on all products ( <article>). When it registers a click, console.log "Hi, Im article Fire / Ash / Water".
+let articles = document.querySelectorAll('article');
+articles.forEach(article => {
+    article.addEventListener('click', () => {
+        let articleTitle = article.querySelector('h3').innerHTML;
+        console.log(`Hi, I'm article ${articleTitle}`);
+    });
+})
