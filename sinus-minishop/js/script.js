@@ -20,3 +20,10 @@ document.querySelector('.art-2 p').innerHTML = 'This is the updated description 
 //5. Change the background color and text of a button.
 document.querySelector('.art-1 button').innerHTML = 'Add to card';
 document.querySelector('.art-1 button').style.backgroundColor = 'purple';
+
+//6. Change the background color of any of the products.
+document.querySelector('.art-1 figure').style.backgroundColor = 'purple'
+
+//7. Replace the address on the page.
+
+document.querySelector('footer section article:nth-child(2) p').innerHTML = 'New Address Road 42 <br> 12345, New City';
