@@ -55,7 +55,7 @@ thirdLink.insertAdjacentElement('afterend', newItem);
  img	hoodie-forrest.png
 h2	Sinus Hoodie
 h3	Forrest
-p	The company itself is a very successful company. Often, pains. */
+p	Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, dolores. */
 let newProduct = document.createElement('article');
 newProduct.classList.add('art-4');
 newProduct.innerHTML = ` <figure><img src="img/hoodie-forrest.png" alt="hoodie"></figure>
@@ -65,3 +65,7 @@ newProduct.innerHTML = ` <figure><img src="img/hoodie-forrest.png" alt="hoodie">
             <button>buy</button>` ;
 document.querySelector('main').appendChild(newProduct);
 
+//14. Listen for a click on the logo ( .logo). When it registers a click, console.log "found you!";
+document.querySelector('header img').addEventListener('click', () => {
+    console.log('found you!');
+});
