@@ -18,12 +18,24 @@ document.querySelector('.art-2 h3').innerHTML = 'New Fire';
 document.querySelector('.art-2 p').innerHTML = 'This is the updated description for the Sinus Hoodie - Fire. It is hotter than ever!';
 
 //5. Change the background color and text of a button.
-document.querySelector('.art-1 button').innerHTML = 'Add to card';
+document.querySelector('.art-1 button').innerHTML = 'Add to cart';
 document.querySelector('.art-1 button').style.backgroundColor = 'purple';
 
 //6. Change the background color of any of the products.
 document.querySelector('.art-1 figure').style.backgroundColor = 'purple'
 
 //7. Replace the address on the page.
-
 document.querySelector('footer section article:nth-child(2) p').innerHTML = 'New Address Road 42 <br> 12345, New City';
+
+//8. Change the color of all <p>.
+document.querySelectorAll('p').forEach (p => {
+    p.style.color = "red";
+});
+
+//9. Change text on all buttons to add to cart .
+document.querySelectorAll('button').forEach (button =>{
+button.innerHTML = 'Add to cart';
+});
+
+//10. Add the class active to the home menu option .
+document.querySelector('nav a:first-child').classList.add('active');
